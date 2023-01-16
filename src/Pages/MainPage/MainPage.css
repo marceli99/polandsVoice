@@ -1,0 +1,19 @@
+.MainPage {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainPage .Banner {
+    align-self: center;
+    margin-bottom: 90px;
+    z-index: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .MainPage {
+        max-width: 900px;
+        align-self: center;
+    }
+}

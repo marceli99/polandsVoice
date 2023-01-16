@@ -1,0 +1,47 @@
+.Navbar {
+    top: 0;
+    background-color: white;
+    height: 41px;
+    position: sticky;
+    z-index: 1;
+}
+
+.Navbar .Content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    margin: 0 14px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.Navbar .Content .Link {
+    color: black;
+    align-self: end;
+}
+
+.Navbar .Content .NavbarTitle {
+    font-family: 'MontserratAlt', serif;
+    font-size: 17px;
+    margin: 0 0 6px 0;
+}
+
+.Navbar .Content .hamburger-react {
+    scale: 0.75;
+    z-index: 1;
+}
+
+.hamburger-react div {
+    height: 2px !important;
+    margin: 0 0 0 12px;
+}
+
+.Navbar .Content .hamburger-react[aria-expanded='true'] {
+    color: white;
+
+}
+
+.Navbar .Content .hamburger-react[aria-expanded='true'] div {
+    color: white;
+    margin: 12px 0 0 0;
+}

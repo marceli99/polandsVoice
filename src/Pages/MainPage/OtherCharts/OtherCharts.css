@@ -1,0 +1,59 @@
+.OtherCharts {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 14px 0;
+}
+
+.OtherCharts .Header {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 2px;
+    margin-bottom: 18px;
+}
+
+.OtherCharts .ChartsPreview {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: 0px;
+    scrollbar-color: transparent;
+}
+
+.OtherCharts .ChartsPreview::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+.OtherCharts .ChartsPreview .ChartPreview {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 0 0 50%;
+}
+
+.OtherCharts .BorderedButton {
+    align-self: end;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .OtherCharts .ChartsPreview {
+        width: 100%;
+        overflow-y: visible;
+        overflow-x: visible;
+        justify-content: center;
+    }
+
+    .OtherCharts .ChartPreview {
+        max-width: 30%;
+    }
+
+    .OtherCharts .BorderedButton {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .OtherCharts .Header {
+        font-size: 18px;
+    }
+}

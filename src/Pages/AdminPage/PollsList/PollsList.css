@@ -1,0 +1,42 @@
+.PollsList {
+    font-size: 12px;
+    color: black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 95%;
+    margin: 2em 0;
+}
+
+.PollsList tbody {
+    border-left: 1px solid #E1E1E1BF;
+    border-right: 1px solid #E1E1E1BF;
+}
+
+.PollsList tbody tr {
+    border-bottom: 1px solid rgba(91, 91, 91, 0.1);
+}
+
+.PollsList tbody tr td {
+    padding: 12px 0;
+    word-break: break-word;
+    width: 10%;
+}
+
+.PollsList .Actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.PollsList .Actions .Action {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+
+
+.PollsList .Actions .Action img {
+    width: 24px;
+    height: 24px;
+}

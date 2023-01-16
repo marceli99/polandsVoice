@@ -1,0 +1,71 @@
+.Sidebar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Sidebar .Content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 66%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(18, 18, 18);
+    font-size: 12px;
+    color: white;
+    transition: 0.4s width;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.Sidebar .Content h5 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.Sidebar .Content .Margin {
+    margin: 12px 30px 0;
+}
+
+.Sidebar .Content span {
+    font-weight: lighter;
+    margin: 0 0 12px 0;
+}
+
+.Sidebar .Content .Links {
+    display: flex;
+    flex-direction: column;
+    line-height: 26px;
+    margin: 0 0 24px 0;
+}
+
+.Sidebar .Content .Links .Disabled {
+    color: gray;
+}
+
+.Sidebar .Content .Links.Main {
+    font-size: 14px;
+}
+
+.Sidebar .Background {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    transition: 0.3s opacity ease-in-out;
+}
+
+.Sidebar.Hidden {
+    pointer-events: none;
+}
+
+.Sidebar.Hidden .Background {
+    opacity: 0;
+}
+
+.Sidebar.Hidden .Content {
+    width: 0;
+}

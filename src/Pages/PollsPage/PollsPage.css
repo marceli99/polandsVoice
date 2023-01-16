@@ -1,0 +1,100 @@
+.PollsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.PollsPage .PageHeader {
+    margin-top: 24px;
+}
+
+.PollsPage .SecondaryHeader {
+    margin-bottom: 14px;
+}
+
+.PollsPage .ParliamentChart {
+    width: 70%;
+    margin: 0 0 6px 0;
+}
+
+.PollsPage .ParliamentChart g {
+    pointer-events: bounding-box;
+}
+
+.PollsPage .ParliamentChart g.transparency > * {
+    opacity: 0.6;
+}
+
+.PollsPage .ParliamentChart g.hover > * {
+    opacity: 1;
+}
+
+.PollsPage .ParliamentChart g text {
+    font-size: 100px;
+}
+
+.PollsPage .SeatsBarChart {
+    margin: 0 0 14px 0;
+}
+
+.PollsPage .TertiaryHeader {
+    margin-bottom: 6px;
+}
+
+.PollsPage .PollsTable {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 640px) {
+    .PollsPage .SeatsBarChart {
+        margin-top: 4px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .PollsPage {
+        width: 95%;
+        align-self: center;
+    }
+
+    .PollsPage .PollsTable {
+        margin-top: 40px;
+    }
+
+    .PollsPage .SeatsBarChart {
+        margin-top: 10px;
+    }
+
+    .PollsPage .SecondaryHeader {
+        margin-bottom: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .PollsPage {
+        width: 80%;
+    }
+
+    .PollsPage .ParliamentChart {
+        width: 50%;
+    }
+
+    .PollsPage .SeatsBarChart {
+        width: 50%;
+    }
+
+    .PollsPage .SeatsBarChart {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .PollsPage .SeatsBarChart {
+        margin-top: 18px;
+    }
+
+    .PollsPage .SecondaryHeader {
+        margin-bottom: 30px;
+    }
+}

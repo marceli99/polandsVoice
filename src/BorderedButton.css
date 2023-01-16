@@ -1,0 +1,94 @@
+.BorderedButton {
+    position: relative;
+    width: fit-content;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 11px 61px;
+    overflow: hidden;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.BorderedButton span {
+    position: relative;
+    z-index: 2;
+}
+
+.BorderedButton.Small {
+    font-size: 10px;
+    padding: 7px 13px 7px 13px;
+}
+
+.BorderedButton.Black {
+    color: rgba(0, 0, 0, 0.75);
+    border-color: rgba(0, 0, 0, 0.75);
+}
+
+.BorderedButton {
+}
+
+.BorderedButton:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.BorderedButton:after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.BorderedButton:hover,
+.BorderedButton:active {
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.BorderedButton:hover:after {
+    height: 300%;
+    opacity: 1;
+}
+
+.BorderedButton:active:after {
+    height: 450%;
+    opacity: 1;
+}
+
+.BorderedButton.Black:after {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.BorderedButton.Black:hover,
+.BorderedButton.Black.active {
+    color: white;
+}
+
+@media screen and (min-width: 900px) {
+    .BorderedButton.Small {
+        font-size: 12px;
+        padding: 10px 32px;
+    }
+}

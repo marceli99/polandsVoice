@@ -1,0 +1,74 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.App a {
+  text-decoration: none;
+  color: white;
+}
+
+.PageHeader {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.SecondaryHeader {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.TertiaryHeader {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: normal;
+}
+
+.SpanText {
+  font-size: 10px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 640px) {
+  .PageHeader {
+    font-size: 32px;
+  }
+
+  .SecondaryHeader {
+    font-size: 16px;
+  }
+
+  .TertiaryHeader {
+    font-size: 16px;
+  }
+
+  .SpanText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .PageHeader {
+    font-size: 34px;
+  }
+
+  .SecondaryHeader {
+    font-size: 18px;
+  }
+
+  .TertiaryHeader {
+    font-size: 18px;
+  }
+
+  .SpanText {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,106 @@
+.MonthlyTrends {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.MonthlyTrends a {
+    align-self: end;
+}
+
+.MonthlyTrends hr {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-color: #D9D9D9;
+    margin: 26px 0;
+    /*border-bottom: 1px solid #D9D9D9;*/
+}
+
+.MonthlyTrends h2 {
+    font-weight: lighter;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 0;
+}
+
+.MonthlyTrends h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.MonthlyTrends .LinedHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.MonthlyTrends .LinedHeader h3 {
+    margin: 0;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.MonthlyTrends .LinedHeader hr {
+    margin: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.MonthlyTrends .PartiesTrends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 6px;
+}
+
+.MonthlyTrends .PartiesTrends .PartyTrend {
+    margin: 0 0 12px 0;
+}
+
+.MonthlyTrends .BorderedButton {
+    margin: 16px 0 0 0;
+}
+
+@media screen and (min-width: 680px) {
+    .MonthlyTrends .PartiesTrends .PartyTrend {
+        flex-basis: 30%;
+        justify-content: inherit;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .MonthlyTrends .PartiesTrends {
+        gap: 12px;
+    }
+
+    .PartiesTrends .PartyTrend {
+        height: 64px;
+    }
+
+    .PartiesTrends .PartyTrend img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .PartiesTrends .PartyTrend .Results h3 {
+        font-size: 22px;
+    }
+
+    .PartiesTrends .PartyTrend .Results h5 {
+        font-size: 12px;
+    }
+
+    .PartiesTrends .PartyTrend .TrendIndicator img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .PartiesTrends .PartyTrend .TrendIndicator span {
+        font-size: 16px;
+    }
+}
